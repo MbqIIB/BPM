@@ -1,0 +1,11 @@
+
+tw.local.Date111 = 
+    Math.abs(tw.local.iInputComp1.endDate - tw.local.iInputComp1.startDate);
+    
+    tw.local.noOfDays = Math.ceil(tw.local.Date111 / (1000 * 3600  * 24)); 
+
+
+tw.local.dueAmount = tw.local.noOfDays * tw.epv.AmountPayable.amountPayable;
+
+tw.local.amountPayable = tw.local.dueAmount - tw.local.advancePayment;
+
