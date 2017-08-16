@@ -1,0 +1,32 @@
+<html>
+<head>
+<script>
+var prevIndex = "2";
+
+function onSelect()
+{     
+    var currIndex = document.getElementById("ddList").selectedIndex;
+    if( currIndex > 0 )
+    {
+        if( prevIndex == currIndex )
+        {
+            alert("Your Value is already Selected");
+		
+        }
+        
+    }
+	
+}
+</script>
+</head>
+<body>
+<H1> drop down Problem Solve</h1>
+    <select id="ddList" onClick="onSelect()">
+        <option value="0">AKhil</option>
+        <option value="1">Shivika</option>
+        <option value="2" selected="select">Omkar</option>
+        <option value="3">Sonal</option>
+		<option value="4">Shalini</option>
+    </select>
+</body>
+</html>
